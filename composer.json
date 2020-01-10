@@ -1,0 +1,27 @@
+{
+    "name": "yosmy/payment-gateway",
+    "description": "",
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosmy\\Payment\\Gateway\\": [
+                "src/card",
+                "src/charge",
+                "src/customer",
+                "src/exception",
+                "src/util"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.yosmy.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
